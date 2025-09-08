@@ -31,14 +31,7 @@ spec:
     - name: path-context
       value: .
   pipelineRef:
-    resolver: git
-    params:
-      - name: url
-        value: "https://github.com/giladravid16/konflux-pipelines.git"
-      - name: revision
-        value: main
-      - name: pathInRepo
-        value: "pipelines/service-component-pipeline.yaml"
+    name: product-component-pipeline
   taskRunTemplate:
     serviceAccountName: build-pipeline-konflux-pipelines-test
   workspaces:
